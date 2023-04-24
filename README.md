@@ -4,8 +4,7 @@ Estructura de Proyecto Lab de Compu II - 2023
 ## Requisitos del Primer Parcial
 
 ### Sobre el Repositorio
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2023-ApellidoAlumno1-ApellidoAlumno2"
-- [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
+- [ ] Título del proyecto: Spotyoursong, Nombre y apellido: Lopez Marcos y Novillo S. Tobias, Link de gh-pages:https://github.com/UCC-LabCompu2/proyecto2023-lopez-novillo.git, Contenido de la página: Hacemos preguntas para conocer el estado de animo de la persona y recomendarle musica segun su animo,  Listado de tecnologías usadas: HTML, CSS.
 - [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
 - [ ] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando GitHubPages
