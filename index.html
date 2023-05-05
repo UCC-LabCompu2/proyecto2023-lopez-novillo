@@ -1,64 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>SpotYourSong</title>
+  <link rel="stylesheet" href="estilos.css">
   <style>
     #tituloPrincipal {
-      color: green;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 50px;
     }
 
     #logo {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 150px;
-      height: auto;
-      border-radius: 50%;
-      padding: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 300%;
+      padding: 0px;
       background-color: transparent;
-      opacity: 0.6;
-    }
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background: url("https://cdn.iconscout.com/icon/free/png-256/arrow-down-1767322-1502435.png") no-repeat scroll right center transparent;
-      color: #fff;
-      font-size: 18px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      width: 200px;
-      margin: 10px;
-    }
-    select:focus {
-      outline: none;
-    }
+      opacity: 1;
 
-    option {
-      background-color: green;
-      color: green;
-      font-size: 18px;
     }
 
     body {
-      background-image: url(Johnlennon.jpeg);
+      background-image: url("Fotos/background.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       padding-top: 100px;
     }
+
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(91, 89, 89, 0.5);
+      z-index: 1;
+    }
+
+    .navbar a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .tit {
+    float: left !important;
+    
+  }
+  .navbar a.tit:hover{
+    text-decoration: none;
+  }
+  #slogan{
+    color: rgb(0, 140, 14);
+    text-align: center;
+  }
+  
   </style>
 </head>
 
 <body>
+  
   <header>
-    <img id="logo" src="logo.png" alt="Logo de la pagina. ">
-  </header>
-  <h1 id="tituloPrincipal">SpotYourSong</h1>
-  <h2>Explore the world of music</h2>
+    <div class="navbar">
+      <a href="#" class="tit">SpotYourSong</a>
+      <a class="active" href="#">Inicio</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Servicio</a>
+      <a href="#">Contacto</a>
+      <img id="logo" src="Fotos/logo2.jpeg" alt="Logo de la pagina. ">
+    </div>
 
+    <section class="textos-header">
+      <h1 id="tituloPrincipal">SpotYourSong</h1>
+      <h2 id="slogan"> 
+        Encontra la musica optima para tu estado de animo.
+      </h2>
+    </section>
+  </header>
+
+  <main>
+    <section class="Sobre nosotros">
+      <h2 class="Titulo">Nuestro Servicio</h2>
+      <div class="sobre nosotros"> 
+        <img src="" alt="">
+      </div>
+    </section>
+  </main>
+ <!-- 
   <form id="Formulario_Estado">
     <p>
       Genero Musical:
@@ -79,11 +123,6 @@
         <option>Triste</option>
       </select>
     </p>
-
-  </form>
+  </form> -->
 </body>
-
 </html>
-
-
-
