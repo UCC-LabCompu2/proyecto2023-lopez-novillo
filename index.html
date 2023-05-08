@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<html lang= "en">
-
-<head> 
-    <meta charset="UTF-8">
-    <title> SpotYourSong </title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SpotYourSong</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-<style>
-    #tituloPrincipal{color:green };
-    
-</style>
 
-<body> 
-    <img src="imagenes/">
-<h1 id= "tituloPrincipal"> SpotYourSong</h1>    
-<h2> Explore the world of music </h2>
+<body>
+  
+  <header>
+    <div class="navbar">
+      <a href="#" class="tit">SpotYourSong</a>
+      <button class="active"><a href="index.html">Inicio</a></button>
+      <a id="acerca" href="#">Acerca de</a>
+      <a id="servicio" href="#">Servicio</a>
+      <a id= "contacto" href="#">Contacto</a>
+      <img id="logo" src="Fotos/logo2.jpeg" alt="Logo de la pagina. ">
+    </div>
 
-<form id="Formulario_Estado">
+    <section class="textos-header">
+      <h1 id="tituloPrincipal">SpotYourSong</h1>
+      <h2 id="slogan"> 
+        Encontra la musica optima para tu estado de animo.
+      </h2>
+    </section>
+  </header>
+
+  <main>
+    <section class="Sobre nosotros">
+   <!--   <h2 class="Titulo">Nuestro Servicio</h2> -->
+      <div class="sobre nosotros"> 
+      
+      </div>
+      <div id="contenedor">
+        <button id="button"><a href=#inicio>Comenzar</a></button>
+      </div>
+    </section>
+  </main>2
+
+  <h2 id="funcion">Funcion</h2>
+  <section id="funcionalidad">
     <p>
-      Genero Musical:
-      <select>
-        <option>Rock</option>
-        <option>Pop</option>
-        <option>Cachengue</option>
-        <option>Indie</option>
-        <option>Rock Nacional</option>
-        <option>Tecno generico</option>
-      </select>
+      A traves de nuestros metodos, logramos ofrecerte un abanico de canciones,<br>
+       para poder aprovechar tu dia al maximo.<br>
+      Te ofrecemos nueva musica segun tus gustos y tus emociones del dia.
     </p>
+  </section>
 
-    <p>
-      Estado de animo:
-      <select>
-        <option>Feliz</option>
-        <option>Triste</option>
-      </select>
-    </p>
-  </form> -->
+  <h2 id="inicio">Seccion de inicio</h2>
+  <section id="Init">
+    <form id="Formulario_Estado">
+      <p>
+        Genero Musical:
+        <select id="genero">
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="reggeton">Reggeton</option>
+          <option value="indie">Indie</option>
+          <option value="Rock Nacional">Rock Nacional</option>
+          <option value="Tecno">Tecno generico</option>
+        </select>
+      </p>
+  
+      <p>
+        Estado de animo:
+        <select id="estado">
+          <option value="Feliz">Feliz</option>
+          <option value="Triste">Triste</option>
+        </select>
+      </p>
+
+      <p>
+        ¿Desea cambiarlo?
+        <select id="cambio">
+          <option>Si</option>
+          <option>No</option>
+        </select>
+      </p>
+
+      <p>
+        <button id= "enviar" type="submit">Enviar</button>
+      </p>
+    </form>
+  </section>
+
+ 
 </body>
 </html>

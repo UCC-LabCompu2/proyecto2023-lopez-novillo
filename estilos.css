@@ -1,0 +1,143 @@
+#tituloPrincipal {
+    color: rgb(181, 223, 236);
+    text-align: center;
+    font-size: 50px;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+  #logo {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 300%;
+    padding: 0px;
+    background-color: transparent;
+    opacity: 1;
+
+  }
+
+  body {
+    background-image: url("Fotos/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+  }
+
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(91, 89, 89, 0.5);
+    z-index: 1;
+  }
+
+  .navbar a {
+    float: right;
+    /*color: #f2f2f2;*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar .active {
+    float:right !important;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .tit {
+  float: left !important;
+  color: rgb(128, 191, 212);
+  font-family:SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif ;
+  }
+
+#acerca{
+    color:#ddd;
+}
+#servicio{
+    color:#ddd;
+}
+#contacto{
+    color:#ddd;
+}
+.navbar a.tit:hover{
+  text-decoration: none;
+}
+#slogan{
+  color: rgb(128, 191, 212);
+  text-align: center;
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#contenedor{
+  text-align: center;
+}
+button a{
+  text-decoration: none;
+  color:inherit;
+}
+#button{
+  background-color:#032502;
+  border:none;
+  color:white;
+  padding: 25px 44px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor:pointer;
+  margin-top: 60px;
+}
+#inicio{
+  color:#ddd;
+  font-size: 50px;
+  margin-top: 300px;
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#init{
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin-top: 50px;
+}
+#Formulario_Estado{
+  color:#ddd;
+  max-width: 500px;
+  font-size: x-large;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+#funcion{
+  text-align: center;
+  color:rgb(128, 191, 212);
+  font-size: 50px;
+}
+#funcionalidad{
+  text-align: center;
+  color:rgb(33, 138, 173);
+  font-size:20px;
+}
+
+#genero{
+    font-size: 20px;
+    background-color:rgb(128, 191, 212) ;
+   
+}
+
+#estado{
+    font-size: 20px;
+    background-color: rgb(128, 191, 212);
+    
+}
+#cambio{
+    font-size: 20px;
+    background-color: rgb(128, 191, 212);
+}
+
