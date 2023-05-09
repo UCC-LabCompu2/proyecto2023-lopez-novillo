@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>SpotYourSong</title>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="Fotos/logo2.jpeg" type="image/x-icon">
 </head>
 
 <body>
@@ -11,11 +12,11 @@
   <header>
     <div class="navbar">
       <a href="#" class="tit">SpotYourSong</a>
-      <button class="active"><a href="index.html">Inicio</a></button>
-      <a id="acerca" href="#">Acerca de</a>
-      <a id="servicio" href="#">Servicio</a>
-      <a id= "contacto" href="#">Contacto</a>
-      <img id="logo" src="Fotos/logo2.jpeg" alt="Logo de la pagina. ">
+      <a href="index.html" class= "active">Inicio</a>
+      <a href="AcercaDe.html" class="acerca">Acerca de</a> 
+      <a href="#Rec" class="recomendaciones">Recomendaciones</a>
+      <a href="#contact" class= "contacto" >Contacto</a>
+      <img id="logo" src="Fotos/logo2.jpeg" alt="Logo de la pagina."> 
     </div>
 
     <section class="textos-header">
@@ -27,13 +28,8 @@
   </header>
 
   <main>
-    <section class="Sobre nosotros">
-   <!--   <h2 class="Titulo">Nuestro Servicio</h2> -->
-      <div class="sobre nosotros"> 
-      
-      </div>
       <div id="contenedor">
-        <button id="button"><a href=#inicio>Comenzar</a></button>
+        <button id="boton"><a href=#inicio>Comenzar</a></button>
       </div>
     </section>
   </main>2
@@ -79,10 +75,37 @@
       </p>
 
       <p>
-        <button id= "enviar" type="submit">Enviar</button>
+        <a href="#" class= "enviar" type="submit">Enviar</a>
       </p>
     </form>
   </section>
+
+  <h2 id="Rec">Recomendaciones</h2>
+  <section id="recom">
+    <p>Te recomendamos algunos mix de canciones en spotify que probablemente no conocias: </p>
+
+    <div id="cuadro">
+      <img id="album" src="Fotos/album.jpg">
+      <img id="album2" src="Fotos/album2.jpg">
+      <img id="album3" src="Fotos/album3.jpg">
+      <div class="playlist">
+        <a href="https://open.spotify.com/playlist/0IgcpTmBDDiM1LK8ibbQpn?si=61bbd2f4859346fb" id="play"style="margin-left: 20px;">Rock</a>
+        <a href="https://open.spotify.com/playlist/2sxWXoLD5AUyGDnlIcetSJ?si=ed8d44a08c424607" id="play"style="margin-left: 250px;">Rock Nacional</a>
+        <a href="https://open.spotify.com/playlist/3QhdwkvgorJ3FhOgFNNyPO?si=23a668f12faa4a06" id="play"style="margin-left: 250px;">Indie</a>
+      </div>
+     </div>
+
+    
+  </section>
+
+  <h2 id="contact">Contacto</h2>
+  <section id="cont">
+    <p>+54 9 1151208658 </p>
+    <p>marclopeztapia@gmail.com</p>
+    <p>tobinovillo@gmail.com</p>
+    <p>Cordoba, Argentina</p>
+  </section>
+  
 
  
 </body>
