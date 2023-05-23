@@ -2,7 +2,10 @@
     color: rgb(181, 223, 236);
     text-align: center;
     font-size: 50px;
-    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /*font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    */
+    font-family: 'Josefin Sans', sans-serif;
+    
   }
 
   #logo {
@@ -81,6 +84,8 @@
   color: rgb(128, 191, 212);
   text-align: center;
   font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  
+  
 }
 #contenedor{
   text-align: center;

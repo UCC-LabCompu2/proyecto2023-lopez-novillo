@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>SpotYourSong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <link rel="shortcut icon" href="Fotos/logo2.jpeg" type="image/x-icon">
 </head>
@@ -45,7 +48,7 @@
 
   <h2 id="inicio">Seccion de inicio</h2>
   <section id="Init">
-    <form id="Formulario_Estado">
+    <form id="Formulario_Estado" onsubmit="genero(value)">
       <p>
         Genero Musical:
         <select id="genero">
