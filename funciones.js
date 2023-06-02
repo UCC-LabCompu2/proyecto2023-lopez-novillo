@@ -5,9 +5,3 @@
  * @param {number} valor - Contiene el valor del input que ingresa el usuario
  */
 
-genero(valor){
-    var resp;
-    if(valor=="rock"){
-        
-    }
-}

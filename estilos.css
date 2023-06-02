@@ -130,6 +130,16 @@ button a{
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
 }
+
+#play1 {
+  margin-left:20px;
+}
+#play2{
+  margin-left: 250px;
+}
+#play3{
+  margin-left: 250px;
+}
 #funcion{
   text-align: center;
   color:rgb(128, 191, 212);
