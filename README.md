@@ -1,6 +1,8 @@
 # proyecto2023
 Estructura de Proyecto Lab de Compu II - 2023
-
+## Autores
+Lopez T. Marcos
+Novillo S. Tobias
 ## Requisitos del Primer Parcial
 
 ### Sobre el Repositorio
