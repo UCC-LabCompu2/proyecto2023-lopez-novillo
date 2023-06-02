@@ -8,7 +8,7 @@ Spotyoursong
 ## Link de gh
 https://ucc-labcompu2.github.io/proyecto2023-lopez-novillo/
 ## Tecnologias usadas
--HTML y CSS
+-HTML, CSS y javascript
 ## Requisitos del Primer Parcial
 
 ### Sobre el Repositorio
