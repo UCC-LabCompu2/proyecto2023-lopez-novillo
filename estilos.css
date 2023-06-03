@@ -153,6 +153,18 @@ button a{
   font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+#nom{
+  text-align: center;
+  font-size: 20px;
+  background-color:rgb(128, 191, 212) ;
+}
+
+#eda{
+  text-align: center;
+  font-size: 20px;
+  background-color:rgb(128, 191, 212) ;
+}
+
 #genero{
     text-align: center;
     font-size: 20px;

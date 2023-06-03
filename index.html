@@ -5,11 +5,13 @@
   <title>SpotYourSong</title>
   <meta content="Marcos Lopez y Tobias Novillo" name="autores">
   <meta content="Web para encontrar musica" name="descripcion">
+  <meta content="Rock, Pop, indie, tecno, regaetton, rock nacion" name="palabras-clave">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
-  <link rel="shortcut icon" href="Fotos/logo2.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="Fotos/logo2.jpeg" type="image/x-icon" alt="logo">
+  <script type="text/javascript" src="funciones.js"></script>
 </head>
 
 <body>
@@ -50,38 +52,51 @@
 
   <h2 id="inicio">Seccion de inicio</h2>
   <section id="Init">
-    <form id="Formulario_Estado" onsubmit="genero(value)">
+    <form id="Formulario_Estado">
+      <p>
+        Nombre:
+        <label for="nombre"></label>
+        <input id="nom" type="text">
+
+      </p>
+
+      <p>
+        Edad:
+        <label for="edad"></label>
+        <input id="eda" type="text" required>
+      </p>
+
       <p>
         Genero Musical:
         <label for="genero"></label>
         <select id="genero">
-          <option value="rock">Rock</option>
-          <option value="pop">Pop</option>
-          <option value="reggeton">Reggeton</option>
-          <option value="indie">Indie</option>
-          <option value="Rock Nacional">Rock Nacional</option>
-          <option value="Tecno">Tecno generico</option>
+          <option id= "rock" value="rock">Rock</option>
+          <option id= "regge"value="reggeton">Reggeton</option>
+          <option id ="rockn"value="Rock Nacional">Rock Nacional</option>
+          <option id ="tecno"value="Tecno">Tecno generico</option>
         </select>
       </p>
   
       <p>
         Estado de animo:
+        <label for="estado"></label>
         <select id="estado">
-          <option value="Feliz">Feliz</option>
-          <option value="Triste">Triste</option>
+          <option id="feliz" value="Feliz">Feliz</option>
+          <option id="triste" value="Triste">Triste</option>
         </select>
       </p>
 
       <p>
         ¿Desea cambiarlo?
+        <label for="cambio"></label>
         <select id="cambio">
-          <option>Si</option>
-          <option>No</option>
+          <option id="si">Si</option>
+          <option id="no">No</option>
         </select>
       </p>
 
       <p>
-        <a href="#" class= "enviar" type="submit">Enviar</a>
+        <button class= "enviar" type="button" onclick="validacion();canciones()">Enviar</button>
       </p>
     </form>
   </section>
@@ -91,9 +106,9 @@
     <p>Te recomendamos algunos mix de canciones en spotify que probablemente no conocias: </p>
 
     <div id="cuadro">
-      <img id="album" src="Fotos/album.jpg">
-      <img id="album2" src="Fotos/album2.jpg">
-      <img id="album3" src="Fotos/album3.jpg">
+      <img id="album" src="Fotos/album.jpg" alt="album1">
+      <img id="album2" src="Fotos/album2.jpg" alt="album2">
+      <img id="album3" src="Fotos/album3.jpg" alt="album3">
       <div class="playlist">
         <a href="https://open.spotify.com/playlist/0IgcpTmBDDiM1LK8ibbQpn?si=61bbd2f4859346fb" id="play1">Rock</a>
         <a href="https://open.spotify.com/playlist/2sxWXoLD5AUyGDnlIcetSJ?si=ed8d44a08c424607" id="play2">Rock Nacional</a>
