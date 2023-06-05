@@ -36,11 +36,13 @@
 
   <main>
       <div id="contenedor">
-        <button id="boton"><a href=#inicio>Comenzar</a></button>
+        <button id="boton" type="button" onclick="setInterval(animacion,10)"><a href=#inicio>Comenzar</a></button>
       </div>
     </section>
-  </main>2
-
+  </main>
+  <canvas id="miCanvas" class="move" width="1000px" height="500px">
+    Tu navegador no soporta el tag de HTML5 canvas 
+  </canvas>
   <h2 id="funcion">Funcion</h2>
   <section id="funcionalidad">
     <p>
@@ -49,10 +51,10 @@
       Te ofrecemos nueva musica segun tus gustos y tus emociones del dia.
     </p>
   </section>
-
   <h2 id="inicio">Seccion de inicio</h2>
   <section id="Init">
     <form id="Formulario_Estado">
+    
       <p>
         Nombre:
         <label for="nombre"></label>
@@ -65,7 +67,7 @@
         <label for="edad"></label>
         <input id="eda" type="text" required>
       </p>
-
+    
       <p>
         Genero Musical:
         <label for="genero"></label>

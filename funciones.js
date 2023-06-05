@@ -129,6 +129,20 @@ canciones =() =>{
         window.open("https://www.youtube.com/watch?v=8AHCfZTRGiI");
     
     }
+}
+    let x = 0;
+    animacion =() =>{
+    const canvas = document.getElementById("miCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const img = new Image();
+    img.src = "Fotos/n2.png";
+
+    img.onload = function () {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas en cada cuadro de animación
+        ctx.drawImage(img, 100, 100);
+    };
+
+    }
 
     
-}
