@@ -183,7 +183,7 @@ button a{
     font-size: 20px;
     background-color: rgb(128, 191, 212);
 }
-a.enviar{
+.enviar{
     display:inline-block;
     padding:4px 7px;
     margin:0.1em;
@@ -197,10 +197,10 @@ a.enviar{
     text-align:center;
     position:relative;
     }
-    a.enviar:hover{
+    .enviar:hover{
     border-color:#7a7a7a;
     }
-    a.enviar:active{
+    .enviar:active{
     background-color:#999999;
     }
    
