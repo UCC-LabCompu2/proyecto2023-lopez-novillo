@@ -31,10 +31,7 @@ validacion = () => {
     }
   
     return true;
-
-    document.getElementById("nom").value = "";
-    document.getElementById("eda").value = "";
-
+   
 
 }
 
@@ -130,7 +127,7 @@ canciones =() =>{
     
     }
 }
-    let x = 0;
+    
     animacion =() =>{
     const canvas = document.getElementById("miCanvas");
     const ctx = canvas.getContext("2d");
@@ -143,6 +140,55 @@ canciones =() =>{
         ctx.drawImage(img, 100, 100);
     };
 
+    }
+
+    var genero = document.getElementById("genero");
+    var verificarBtn = document.getElementById("verificarBtn");
+    var imgElement = document.getElementById("img");
+
+    function verificarEntrada(){
+        var entrada = entradaInput.value; 
+
+        // Verifica las condiciones y asigna una imagen correspondiente
+        if (entrada === "rock") {
+          imgElement.src = "Fotos/rhcp.jfif";
+        } else if (entrada === "trap") {
+          imgElement.src = "Fotos/duki.jpeg";
+        } else if (entrada === "tecno") {
+          imgElement.src = "imagen3.jpg";
+        } else {
+          imgElement.src = ""; // Si no cumple ninguna condición, no asigna una imagen
+        }
+      
+    }
+
+    verificarBtn.addEventListener("click", verificarBtn);
+
+
+    var canvasa = document.getElementById("canvas");
+    var ctx = canvasa.getContext("2d");
+    var image= new Image();
+    image.src = "Fotos/duki.jpeg";
+
+    function startanimation(){
+        var position=0;
+
+        function animate (){
+            position = (position + 1)% canvasa.width;
+
+            //borra contenido anterior
+            ctx.clearRect(0,0,canvasa.width,canvasa.height);
+
+            //dibuja img fondo repetidia
+
+            for( var i=-1; i<=canvasa.width / image.width + 1;i++){
+                ctx.drawImage(image, i*image.width-position,0);
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
     }
 
     
