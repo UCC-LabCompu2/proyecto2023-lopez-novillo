@@ -14,8 +14,7 @@
   <script type="text/javascript" src="funciones.js"></script>
 </head>
 
-<body>
-  
+<body onload="setInterval(cargarWeb, 10)" >
   <header>
     <div class="navbar">
       <a href="#" class="tit">SpotYourSong</a>
@@ -33,16 +32,16 @@
       </h2>
     </section>
   </header>
+  <canvas id="loadCanvas" width="2000" height="200">
+    Tu navegador no soporta el tag de HTML5 canvas
+  </canvas>
 
   <main>
       <div id="contenedor">
-        <button id="boton" type="button" onclick="setInterval(animacion,10)"><a href=#inicio>Comenzar</a></button>
+        <button id="boton" type="button" onclick="setInterval(animacion,30)"><a href=#inicio>Comenzar</a></button>
       </div>
     </section>
   </main>
-  <canvas id="miCanvas" class="move" width="1000px" height="500px">
-    Tu navegador no soporta el tag de HTML5 canvas 
-  </canvas>
   <h2 id="funcion">Funcion</h2>
   <section id="funcionalidad">
     <p>
@@ -50,57 +49,65 @@
        para poder aprovechar tu dia al maximo.<br>
       Te ofrecemos nueva musica segun tus gustos y tus emociones del dia.
     </p>
+    
   </section>
-  <h2 id="inicio">Seccion de inicio</h2>
-  <section id="Init">
-    <form id="Formulario_Estado">
-    
-      <p>
-        Nombre:
-        <label for="nombre"></label>
-        <input id="nom" type="text">
-
-      </p>
-
-      <p>
-        Edad:
-        <label for="edad"></label>
-        <input id="eda" type="text" required>
-      </p>
-    
-      <p>
-        Genero Musical:
-        <label for="genero"></label>
-        <select id="genero">
-          <option id= "rock" value="rock">Rock</option>
-          <option id= "trap"value="trap">Trap</option>
-          <option id ="rockn"value="rockn">Rock Nacional</option>
-          <option id ="tecno"value="tecno">Tecno generico</option>
-        </select>
-      </p>
   
-      <p>
-        Estado de animo:
-        <label for="estado"></label>
-        <select id="estado">
-          <option id="feliz" value="Feliz">Feliz</option>
-          <option id="triste" value="Triste">Triste</option>
-        </select>
-      </p>
+    <h2 id="inicio">Seccion de inicio</h2>
+    <canvas id="miCanvas" class="move" width="2000px" height="500px">
+      Tu navegador no soporta el tag de HTML5 canvas 
+    </canvas>
+  <section id="Init">
+      <div>
+        <form id="Formulario_Estado">
+          <p>
+            Nombre:
+            <label for="nombre"></label>
+            <input id="nom" type="text">
+          </p>
 
-      <p>
-        ¿Desea cambiarlo?
-        <label for="cambio"></label>
-        <select id="cambio">
-          <option id="si">Si</option>
-          <option id="no">No</option>
-        </select>
-      </p>
+          <p>
+            Edad:
+            <label for="edad"></label>
+            <input id="eda" type="text" required>
+          </p>
+        
+          <p>
+            Genero Musical:
+            <label for="genero"></label>
+            <select id="genero">
+              <option id= "rock" value="rock">Rock</option>
+              <option id= "trap"value="trap">Trap</option>
+              <option id ="rockn"value="rockn">Rock Nacional</option>
+              <option id ="tecno"value="tecno">Tecno generico</option>
+            </select>
+          </p>
+      
+          <p>
+            Estado de animo:
+            <label for="estado"></label>
+            <select id="estado">
+              <option id="feliz" value="Feliz">Feliz</option>
+              <option id="triste" value="Triste">Triste</option>
+            </select>
+          </p>
 
-      <p>
-        <button class= "enviar" type="button" onclick="validacion();canciones()">Enviar</button>
-      </p>
-    </form>
+          <p>
+            ¿Desea cambiarlo?
+            <label for="cambio"></label>
+            <select id="cambio">
+              <option id="si">Si</option>
+              <option id="no">No</option>
+            </select>
+            <canvas id="anim" class="move" width="2000px" height="500px">
+              Tu navegador no soporta el tag de HTML5 canvas 
+            </canvas>
+          </p>
+
+          <p>
+            <button class= "enviar" type="button" onclick="validacion();canciones()">Enviar</button>
+          </p>
+        </form>
+      </div>
   </section>
 
   <h2 id="Rec">Recomendaciones</h2>

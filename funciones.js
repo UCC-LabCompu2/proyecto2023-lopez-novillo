@@ -130,19 +130,43 @@ canciones =() =>{
     
     }
 }
-    let x = 0;
-    animacion =() =>{
+   
+function animacion() {
     const canvas = document.getElementById("miCanvas");
     const ctx = canvas.getContext("2d");
 
     const img = new Image();
-    img.src = "Fotos/n2.png";
+    img.src = "Fotos/start.png";
+    
 
     img.onload = function () {
         ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas en cada cuadro de animación
-        ctx.drawImage(img, 100, 100);
+        ctx.drawImage(img, 550, 100);
+    };
+    
+}
+
+const dx = 2;
+let x = 0;
+function cargarWeb() {
+    const canvas = document.getElementById("loadCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const img = new Image();
+
+    img.onload = function () {
+      ctx.drawImage(img, x, 100);
     };
 
+    img.src = "Fotos/descarga.png"; // Asegúrate de que la ruta de la imagen sea correcta
+
+    if (x > canvas.width) {
+      x = 0;
     }
+
+    x += dx;
+  }
 
     
