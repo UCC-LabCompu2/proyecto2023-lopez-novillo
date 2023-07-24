@@ -32,8 +32,8 @@
   
     return true;
 
-    document.getElementById("nom").value = "";
-    document.getElementById("eda").value = "";
+    //document.getElementById("nom").value = "";
+    //document.getElementById("eda").value = "";
 
 
 }
