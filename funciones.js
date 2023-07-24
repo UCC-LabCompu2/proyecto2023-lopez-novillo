@@ -5,7 +5,7 @@
  * @param {number} valor - Contiene el valor del input que ingresa el usuario
  */
 
-validacion = () => {
+ validacion = () => {
     var nombre=document.getElementById("nom").value;
     var edad=document.getElementById("eda").value;
     if(nombre === ""){
