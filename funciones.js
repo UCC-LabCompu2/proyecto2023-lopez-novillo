@@ -5,40 +5,43 @@
  * @param {number} valor - Contiene el valor del input que ingresa el usuario
  */
 
- validacion = () => {
-    var nombre=document.getElementById("nom").value;
+ validacion = () => {                   //valida que el nombre y la edad esten bien
+    var nombre=document.getElementById("nom").value; 
     var edad=document.getElementById("eda").value;
     if(nombre === ""){
-        alert("Ingresar el nombre");
+        alert("Ingresar el nombre");  // si el campo esta vacio alerta para que se complete
         return false;
 
     }
-    if(!isNaN(nombre)){
+    if(!isNaN(nombre)){                 // si es un numero alerta para que se escriba bien
         alert("El nombre no puede ser numero");
         document.getElementById("nom").value = "";
         return false;
     }
 
     if(edad===""){
-        alert ("Ingrese la edad");
+        alert ("Ingrese la edad");// si el campo esta vacio alerta para que se complete
+        return false;
+    }
+    if(edad>=100){
+        alert("Ingrese una edad valida");
+        document.getElementById("eda").value = "";
         return false;
     }
 
     if(isNaN(edad)){
-        alert("La edad no puede estar en letras");
+        alert("La edad no puede estar en letras");// si es una letra alerta para que se escriba bien
         document.getElementById("eda").value = "";
         return false;
     }
   
     return true;
 
-    //document.getElementById("nom").value = "";
-    //document.getElementById("eda").value = "";
+   
 
 
 }
-
-canciones =() =>{
+canciones =() =>{      //esta funcion realiza las distintas combinaciones para recomendar la mejor cancion
     var generoM=document.getElementById("genero").value;
     var estado=document.getElementById("estado").value;
     var cambio=document.getElementById("cambio").value;
@@ -47,7 +50,7 @@ canciones =() =>{
     console.log(estado);
     console.log(cambio);
 
-    if (validacion()===false){
+    if (validacion()===false){ //verifica que los campos esten bien completados antes de arrancar
         return;
     }
 
@@ -130,43 +133,69 @@ canciones =() =>{
     
     }
 }
+
    
-function animacion() {
+function animacion() {  //realiza el primer canva cuando se toca el boton "comenzar"
+    //obtiene el canvas y su contexto
     const canvas = document.getElementById("miCanvas");
     const ctx = canvas.getContext("2d");
 
-    const img = new Image();
-    img.src = "Fotos/start.png";
+    const img = new Image(); //se crea el objeto image para cargar la imagen
+    img.src = "Fotos/start.png"; //ruta
     
-
+    // el evento onload se ejecuta cuando la imagen se carga correctamente
     img.onload = function () {
         ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas en cada cuadro de animación
-        ctx.drawImage(img, 550, 100);
+        ctx.drawImage(img, 550, 100);//dibuja la imagen en esas coordenadas
     };
     
 }
 
-const dx = 2;
-let x = 0;
-function cargarWeb() {
-    const canvas = document.getElementById("loadCanvas");
-    const ctx = canvas.getContext("2d");
+function startAnimacion(){
+    // Verifica las condiciones y asigna una imagen correspondiente
+    var genero = document.getElementById("genero").value;
+    var imgElement = document.getElementById("img");
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (genero === "rock") {
+      imgElement.src = "Fotos/rock.jpg";
+    } else if (genero === "trap") {
+      imgElement.src = "Fotos/trap.jpg";s
+    } else if (genero === "tecno") {
+      imgElement.src = "Fotos/Cattaneo.jpg";
+    } else if (genero === "rockn") {
+        imgElement.src = "Fotos/rock_nacional.jpg";
+    } 
+    console.log( "generoselec: " + genero);
 
-    const img = new Image();
+    imgElement.classList.add("animacion");
+    var xPos = 0;
+    var yPos = 0;
+    var velocidadX=1;
 
-    img.onload = function () {
-      ctx.drawImage(img, x, 100);
-    };
+    function animacion2() {
+        // borra el contenido de antes
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    img.src = "Fotos/descarga.png"; // Asegúrate de que la ruta de la imagen sea correcta
-
-    if (x > canvas.width) {
-      x = 0;
+        var img = new Image();
+        img.src=imgElement.src;
+    
+        ctx.drawImage(img, xPos, yPos, 70, 70); 
+    
+        xPos += velocidadX; 
+    
+        // Si la imagen sale del canvas, reinicia su posición
+        if (xPos > canvas.width) {
+          xPos = -100; // Reinicia la posición para que vuelva a aparecer desde la izquierda
+        }
+    
+        
+        requestAnimationFrame(animacion2);
     }
 
-    x += dx;
-  }
+    animacion2();
+
+}
 
     

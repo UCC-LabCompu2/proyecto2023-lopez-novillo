@@ -306,5 +306,19 @@ button a{
 }
 
 #canvas {
-  border: 1px solid black;
+  width:1300px;
+
+}
+
+.imagen-contenedor{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: none;
+}
+
+#img{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
 }

@@ -14,7 +14,7 @@
   <script type="text/javascript" src="funciones.js"></script>
 </head>
 
-<body onload="setInterval(cargarWeb, 10)" >
+<body>
   <header>
     <div class="navbar">
       <a href="#" class="tit">SpotYourSong</a>
@@ -28,31 +28,27 @@
     <section class="textos-header">
       <h1 id="tituloPrincipal">SpotYourSong</h1>
       <h2 id="slogan"> 
-        Encontra la musica optima para tu estado de animo.
+        Encontrá la música óptima para tu estado de ánimo.
       </h2>
     </section>
   </header>
-  <canvas id="loadCanvas" width="2000" height="200">
-    Tu navegador no soporta el tag de HTML5 canvas
-  </canvas>
 
   <main>
       <div id="contenedor">
         <button id="boton" type="button" onclick="setInterval(animacion,30)"><a href=#inicio>Comenzar</a></button>
       </div>
-    </section>
   </main>
-  <h2 id="funcion">Funcion</h2>
+  <h2 id="funcion">Función</h2>
   <section id="funcionalidad">
     <p>
-      A traves de nuestros metodos, logramos ofrecerte un abanico de canciones,<br>
-       para poder aprovechar tu dia al maximo.<br>
-      Te ofrecemos nueva musica segun tus gustos y tus emociones del dia.
+      A través de nuestros métodos, logramos ofrecerte un abanico de canciones,<br>
+       para poder aprovechar tu día al máximo.<br>
+      Te ofrecemos nueva música según tus gustos y tus emociones del día.
     </p>
     
   </section>
   
-    <h2 id="inicio">Seccion de inicio</h2>
+    <h2 id="inicio">Sección de inicio</h2>
     <canvas id="miCanvas" class="move" width="2000px" height="500px">
       Tu navegador no soporta el tag de HTML5 canvas 
     </canvas>
@@ -72,22 +68,22 @@
           </p>
         
           <p>
-            Genero Musical:
+            Género Musical:
             <label for="genero"></label>
             <select id="genero">
               <option id= "rock" value="rock">Rock</option>
               <option id= "trap"value="trap">Trap</option>
               <option id ="rockn"value="rockn">Rock Nacional</option>
-              <option id ="tecno"value="tecno">Tecno generico</option>
+              <option id ="tecno"value="tecno">Tecno genérico</option>
             </select>
           </p>
       
           <p>
-            Estado de animo:
+            Estado de ánimo:
             <label for="estado"></label>
             <select id="estado">
-              <option id="feliz" value="Feliz">Feliz</option>
-              <option id="triste" value="Triste">Triste</option>
+              <option id="feliz" value="Feliz" >Feliz</option>
+              <option id="triste" value="Triste" >Triste</option>
             </select>
           </p>
 
@@ -95,22 +91,30 @@
             ¿Desea cambiarlo?
             <label for="cambio"></label>
             <select id="cambio">
-              <option id="si">Si</option>
+              <option id="si">Sí</option>
               <option id="no">No</option>
             </select>
             
           </p>
 
           <p>
-            <button class= "enviar" type="button" onclick="validacion();canciones()">Enviar</button>
+            <button class= "enviar" type="button" onclick="validacion(); canciones(); startAnimacion()">Enviar</button>
           </p>
         </form>
       </div>
   </section>
 
+  <div class="imagen-contenedor">
+    <img id="img" src="" alt="imagen del album">
+  </div>
+
+  <section>
+    <canvas id="canvas"></canvas>
+  </section>
+
   <h2 id="Rec">Recomendaciones</h2>
   <section id="recom">
-    <p>Te recomendamos algunos mix de canciones en spotify que probablemente no conocias: </p>
+    <p>Te recomendamos algunos mix de canciones en spotify que probablemente no conocías: </p>
 
     <div id="cuadro">
       <img id="album" src="Fotos/album.jpg" alt="album1">
@@ -131,7 +135,7 @@
     <p>+54 9 1151208658 </p>
     <p>marclopeztapia@gmail.com</p>
     <p>tobinovillo@gmail.com</p>
-    <p>Cordoba, Argentina</p>
+    <p>Córdoba, Argentina</p>
   </section>
   
 
