@@ -56,7 +56,6 @@ canciones =() =>{      //esta funcion realiza las distintas combinaciones para r
 
     if(generoM==="rock" && estado==="Feliz" && cambio==="Si"){
         window.open("https://www.youtube.com/watch?v=8AHCfZTRGiI");
-    
     }
 
     if(generoM==="rock" && estado==="Feliz" && cambio==="No"){
